@@ -1,0 +1,919 @@
+.headerHome {
+    display: flex;
+    /* Usa o modelo de layout flexbox para organizar os itens dentro do container */
+    align-items: baseline;
+    /* Alinha os itens ao longo da linha de base do conteúdo */
+    justify-content: space-between;
+    /* Coloca os itens com espaço entre eles */
+}
+
+.pokemons {
+    display: grid;
+    /* Usa o modelo de layout grid para organizar os itens como uma grade */
+    grid-template-columns: 1fr;
+    /* Define uma única coluna para os itens dentro do grid */
+    margin: 0;
+    /* Remove a margem padrão */
+    padding: 0;
+    /* Remove o padding padrão */
+    list-style: none;
+    /* Remove os marcadores de lista (bullet points) */
+}
+
+.normal {
+    background-color: #a6a877;
+    /* Define a cor de fundo para o tipo 'normal' */
+}
+
+.grass {
+    background-color: #77c850;
+    /* Define a cor de fundo para o tipo 'grass' (planta) */
+}
+
+.fire {
+    background-color: #ee7f30;
+    /* Define a cor de fundo para o tipo 'fire' (fogo) */
+}
+
+.water {
+    background-color: #678fee;
+    /* Define a cor de fundo para o tipo 'water' (água) */
+}
+
+.electric {
+    background-color: #f7cf2e;
+    /* Define a cor de fundo para o tipo 'electric' (elétrico) */
+}
+
+.ice {
+    background-color: #98d5d7;
+    /* Define a cor de fundo para o tipo 'ice' (gelo) */
+}
+
+.ground {
+    background-color: #dfbf69;
+    /* Define a cor de fundo para o tipo 'ground' (terra) */
+}
+
+.flying {
+    background-color: #a98ff0;
+    /* Define a cor de fundo para o tipo 'flying' (voador) */
+}
+
+.poison {
+    background-color: #a040a0;
+    /* Define a cor de fundo para o tipo 'poison' (veneno) */
+}
+
+.fighting {
+    background-color: #bf3029;
+    /* Define a cor de fundo para o tipo 'fighting' (luta) */
+}
+
+.psychic {
+    background-color: #f65687;
+    /* Define a cor de fundo para o tipo 'psychic' (psíquico) */
+}
+
+.dark {
+    background-color: #725847;
+    /* Define a cor de fundo para o tipo 'dark' (sombrio) */
+}
+
+.rock {
+    background-color: #b8a137;
+    /* Define a cor de fundo para o tipo 'rock' (pedra) */
+}
+
+.bug {
+    background-color: #a8b720;
+    /* Define a cor de fundo para o tipo 'bug' (inseto) */
+}
+
+.ghost {
+    background-color: #6e5896;
+    /* Define a cor de fundo para o tipo 'ghost' (fantasma) */
+}
+
+.steel {
+    background-color: #b9b7cf;
+    /* Define a cor de fundo para o tipo 'steel' (aço) */
+}
+
+.dragon {
+    background-color: #6f38f6;
+    /* Define a cor de fundo para o tipo 'dragon' (dragão) */
+}
+
+.fairy {
+    background-color: #f9aec7;
+    /* Define a cor de fundo para o tipo 'fairy' (fada) */
+}
+
+.pokemon {
+    display: flex;
+    /* Usa flexbox para o layout do card de Pokémon */
+    flex-direction: column;
+    /* Organiza os itens dentro do card de forma vertical */
+    margin: .5rem;
+    /* Adiciona uma margem de 0.5rem ao redor do card */
+    padding: 1rem;
+    /* Adiciona padding de 1rem dentro do card */
+    border-radius: 1rem;
+    /* Define bordas arredondadas de 1rem no card */
+}
+
+.pokemon .number {
+    color: #000;
+    /* Define a cor do número como preta */
+    opacity: .3;
+    /* Torna o número semi-transparente */
+    text-align: right;
+    /* Alinha o número à direita dentro do card */
+    font-size: .8rem;
+    /* Define o tamanho da fonte do número para 0.8rem */
+}
+
+.pokemon .name {
+    text-transform: capitalize;
+    /* Transforma a primeira letra do nome em maiúscula */
+    color: #fff;
+    /* Define a cor do nome como branca */
+    text-align: initial;
+    /* Alinha o nome ao início */
+    margin-bottom: .25rem;
+    /* Adiciona uma margem inferior de 0.25rem ao nome */
+}
+
+
+.pokemon .detail {
+    display: flex;
+    /* Usa o modelo de layout flexbox para organizar os itens dentro do container */
+    flex-direction: row;
+    /* Organiza os itens de forma horizontal */
+    justify-content: space-between;
+    /* Coloca os itens com espaço entre eles */
+}
+
+.pokemon .detail .types {
+    padding: 0;
+    /* Remove o padding da lista */
+    margin: 0;
+    /* Remove a margem da lista */
+    list-style: none;
+    /* Remove os marcadores de lista (bullet points) */
+}
+
+.pokemon .detail .types .type {
+    color: #fff;
+    /* Define a cor do texto (tipo do Pokémon) como branca */
+    padding: .25rem .5rem;
+    /* Adiciona padding vertical e horizontal aos itens */
+    margin: .25rem 0;
+    /* Adiciona margem vertical aos itens */
+    font-size: .625rem;
+    /* Define o tamanho da fonte como 0.625rem */
+    border-radius: 1rem;
+    /* Torna os cantos dos itens arredondados */
+    filter: brightness(1.1);
+    /* Aumenta o brilho do texto em 10% */
+    text-align: center;
+    /* Alinha o texto ao centro dentro do item */
+}
+
+.pokemon .detail img {
+    max-width: 80px;
+    /* Define a largura máxima da imagem como 80px */
+    height: 70px;
+    /* Define a altura da imagem como 70px */
+}
+
+.pagination {
+    display: flex;
+    /* Usa flexbox para a navegação da paginação */
+    flex-direction: row;
+    /* Organiza os itens de forma horizontal */
+    justify-content: center;
+    /* Centraliza os itens horizontalmente */
+    align-items: center;
+    /* Alinha os itens verticalmente ao centro */
+    width: 100%;
+    /* Define a largura como 100% */
+    padding: 1rem;
+    /* Adiciona padding ao redor da área de paginação */
+    padding-bottom: 0;
+    /* Remove o padding inferior */
+}
+
+.pagination button {
+    padding: .25rem .5rem;
+    /* Adiciona padding aos botões da paginação */
+    margin: .25rem 0;
+    /* Adiciona margem vertical aos botões */
+    font-size: .8rem;
+    /* Define o tamanho da fonte como 0.8rem */
+    color: #fff;
+    /* Define a cor do texto do botão como branca */
+    background-color: #6c79db;
+    /* Define a cor de fundo do botão como azul claro */
+    border: none;
+    /* Remove a borda do botão */
+    border-radius: 1rem;
+    /* Torna os cantos do botão arredondados */
+    cursor: pointer;
+    /* Muda o cursor para indicar que é clicável */
+}
+
+.pagination button:hover {
+    background-color: #616cc2;
+    /* Altera a cor de fundo do botão quando o mouse passa sobre ele */
+}
+
+.pokemon-card {
+    background: none;
+    /* Remove o fundo do card */
+    border: none;
+    /* Remove a borda do card */
+    cursor: pointer;
+    /* Define o cursor como pointer para indicar que é clicável */
+    transition: transform .3s;
+    /* Adiciona uma transição suave ao efeito de transformação */
+}
+
+.pokemon-card:hover {
+    transform: scale(1.1);
+    /* Amplia o card em 10% quando o mouse passa sobre ele */
+}
+
+.pokemon-card>li {
+    background-image: url(../img/card-bg.png);
+    /* Define uma imagem de fundo para o item da lista */
+    background-position: 105% 130%;
+    /* Define a posição da imagem de fundo */
+    background-size: 50%;
+    /* Reduz o tamanho da imagem de fundo para 50% */
+    background-repeat: no-repeat;
+    /* Impede que a imagem de fundo se repita */
+}
+
+/* Modal */
+
+.modal {
+    display: none;
+    /* Inicialmente, o modal está oculto */
+    height: 66%;
+    /* Define a altura do modal como 66% da altura da tela */
+    width: 100vw;
+    /* Define a largura do modal como 100% da largura da tela */
+    position: fixed;
+    /* Usa posição fixa para que o modal fique fixo na tela */
+    top: 0;
+    /* Posiciona o modal no topo da tela */
+    right: 0;
+    /* Posiciona o modal na direita da tela */
+    left: 0;
+    /* Posiciona o modal na esquerda da tela */
+    bottom: 0;
+    /* Posiciona o modal na parte inferior da tela */
+}
+
+.header {
+    padding: .8rem 2rem 2rem 2rem;
+    /* Adiciona padding ao redor do cabeçalho do modal */
+    background-image: url(../img/card-bg.png);
+    /* Define a imagem de fundo para o cabeçalho */
+    background-position: 50% 130%;
+    /* Define a posição da imagem de fundo */
+    background-size: 20rem;
+    /* Define o tamanho da imagem de fundo como 20rem */
+    background-repeat: no-repeat;
+    /* Impede que a imagem de fundo se repita */
+}
+
+.buttons {
+    display: flex;
+    /* Usa flexbox para organizar os botões dentro do modal */
+    align-items: center;
+    /* Alinha os itens verticalmente ao centro */
+    justify-content: space-between;
+    /* Coloca os botões com espaço entre eles */
+}
+
+.back button {
+    background: none;
+    /* Remove o fundo do botão */
+    border: none;
+    /* Remove a borda do botão */
+    cursor: pointer;
+    /* Define o cursor como pointer para indicar que é clicável */
+}
+
+.back button img {
+    height: 3rem;
+    /* Define a altura da imagem do botão de voltar */
+}
+
+.heart {
+    background: none;
+    /* Remove o fundo do botão de coração */
+    border: none;
+    /* Remove a borda do botão de coração */
+    cursor: pointer;
+    /* Define o cursor como pointer para indicar que é clicável */
+    height: 2rem;
+    /* Define a altura do botão de coração */
+}
+
+.heart img {
+    height: 100%;
+    /* Define a altura da imagem do botão de coração para 100% do tamanho do botão */
+}
+
+.liked img {
+    content: url("../img/heartFull.png");
+    /* Substitui a imagem do coração por uma cheia quando "curtido" */
+}
+
+
+.photo {
+    display: flex;
+    /* Usa flexbox para organizar os itens dentro do container */
+    justify-content: center;
+    /* Centraliza o conteúdo horizontalmente */
+}
+
+.photo img {
+    max-width: 100%;
+    /* Define que a largura máxima da imagem será 100% do seu container */
+    height: 230px;
+    /* Define a altura fixa da imagem como 230px */
+}
+
+.infos {
+    display: inline-flex;
+    /* Usa flexbox para organizar os itens de forma inline */
+    align-items: center;
+    /* Alinha os itens verticalmente ao centro */
+    width: 100%;
+    /* Define a largura do container como 100% */
+    justify-content: space-between;
+    /* Coloca os itens com espaço entre eles */
+}
+
+.modal .number {
+    display: flex;
+    /* Usa flexbox para a numeração dentro do modal */
+    color: #fff;
+    /* Define a cor do texto como branca */
+    text-align: right;
+    /* Alinha o texto à direita */
+    font-size: 1.2rem;
+    /* Define o tamanho da fonte como 1.2rem */
+}
+
+.modal .name {
+    text-transform: capitalize;
+    /* Capitaliza a primeira letra de cada palavra no nome */
+    color: #fff;
+    /* Define a cor do nome como branca */
+    font-size: 2rem;
+    /* Define o tamanho da fonte como 2rem */
+    margin-bottom: .25rem;
+    /* Adiciona uma margem inferior de 0.25rem */
+    font-weight: bolder;
+    /* Torna a fonte mais espessa (negrito) */
+}
+
+.detailsModal {
+    background-color: #fff;
+    /* Define a cor de fundo do modal como branca */
+    position: fixed;
+    /* Usa posição fixa para o modal */
+    border-radius: 50px;
+    /* Torna os cantos do modal arredondados */
+    width: 100%;
+    /* Define a largura do modal como 100% */
+    height: 100%;
+    /* Define a altura do modal como 100% */
+    left: 0;
+    /* Posiciona o modal no lado esquerdo */
+    padding: 30px;
+    /* Adiciona padding de 30px em todos os lados do modal */
+}
+
+.menuModal {
+    display: flex;
+    /* Usa flexbox para organizar os itens do menu dentro do modal */
+    list-style: none;
+    /* Remove os marcadores da lista */
+    justify-content: space-between;
+    /* Coloca os itens do menu com espaço entre eles */
+    padding-left: 0;
+    /* Remove o padding da esquerda */
+    margin-top: 10px;
+    /* Adiciona margem superior de 10px */
+    margin-bottom: 0;
+    /* Remove a margem inferior */
+    align-items: baseline;
+    /* Alinha os itens na linha de base */
+}
+
+.menuModal button:hover {
+    color: #000;
+    /* Altera a cor do botão para preta quando o mouse passa sobre ele */
+}
+
+hr {
+    margin-top: 20px;
+    /* Adiciona margem superior de 20px à linha horizontal */
+    opacity: .2;
+    /* Define a opacidade da linha como 20% */
+}
+
+.menuModal button {
+    background: none;
+    /* Remove o fundo do botão */
+    border: none;
+    /* Remove a borda do botão */
+    cursor: pointer;
+    /* Muda o cursor para indicar que o botão é clicável */
+    text-decoration: none;
+    /* Remove qualquer decoração de texto, como o sublinhado */
+    color: rgb(167, 167, 167);
+    /* Define a cor do texto do botão como cinza claro */
+}
+
+hr {
+    margin-top: 0;
+    /* Remove a margem superior da linha horizontal */
+}
+
+.modal .detail {
+    display: flex;
+    /* Usa flexbox para o layout dentro do detalhe do modal */
+    flex-direction: column;
+    /* Organiza os itens de forma vertical */
+}
+
+.modal .detail .types {
+    display: inline-flex;
+    /* Usa flexbox para os tipos de Pokémon em linha */
+    padding: 0;
+    /* Remove o padding */
+    margin: 0;
+    /* Remove a margem */
+    gap: 5px;
+    /* Adiciona um espaçamento de 5px entre os itens */
+    list-style: none;
+    /* Remove os marcadores de lista */
+}
+
+.modal .detail .types .type {
+    color: #fff;
+    /* Define a cor do texto do tipo como branca */
+    padding: .25rem .5rem;
+    /* Adiciona padding vertical e horizontal aos tipos */
+    margin: .25rem 0;
+    /* Adiciona margem vertical aos tipos */
+    font-size: 0.8rem;
+    /* Define o tamanho da fonte como 0.8rem */
+    border-radius: 1rem;
+    /* Torna os cantos dos tipos arredondados */
+    filter: brightness(1.1);
+    /* Aumenta o brilho do texto em 10% */
+}
+
+.infoModal {
+    display: flex;
+    /* Usa flexbox para organizar os itens dentro do modal de informações */
+    flex-direction: column;
+    /* Organiza os itens de forma vertical */
+    padding: 20px 0;
+    /* Adiciona padding vertical de 20px */
+    line-height: 30px;
+    /* Define o espaçamento entre as linhas de texto */
+    font-size: 1rem;
+    /* Define o tamanho da fonte como 1rem */
+}
+
+.about1,
+.about2 {
+    display: flex;
+    /* Usa flexbox para organizar os itens dentro de cada seção */
+    flex-direction: column;
+    /* Organiza os itens de forma vertical */
+}
+
+.about2 {
+    text-align: justify;
+    /* Justifica o texto na segunda seção */
+}
+
+.about1 div,
+.about2 div {
+    display: grid;
+    /* Usa o modelo de grid para os itens dentro das seções */
+    grid-template-columns: 1fr 1fr;
+    /* Cria duas colunas com largura igual */
+    align-items: center;
+    /* Alinha os itens ao centro verticalmente */
+    gap: 1rem;
+    /* Adiciona um espaço de 1rem entre os itens */
+}
+
+.about2 label {
+    line-height: 1.5rem;
+    /* Define o espaçamento entre as linhas de texto dentro do label */
+    padding-right: 15px;
+    /* Adiciona padding à direita do label */
+}
+
+.text-gray {
+    color: rgb(167, 167, 167);
+    /* Define a cor do texto como cinza claro */
+}
+
+.text-black {
+    color: #000;
+    /* Define a cor do texto como preta */
+}
+
+.selected {
+    color: #000 !important;
+    /* Garante que a cor do texto seja preta, mesmo que outras regras possam sobrescrever */
+    border-bottom: 3px solid #187fe7 !important;
+    /* Adiciona uma borda inferior azul quando o item está selecionado */
+    padding-bottom: 15px;
+    /* Adiciona um espaçamento inferior de 15px para o item selecionado */
+}
+
+h4 {
+    margin-bottom: 10px;
+    /* Adiciona uma margem inferior de 10px ao título h4 */
+}
+
+.health-bar {
+    width: 200px;
+    /* Define a largura da barra de saúde como 200px */
+    height: 5px;
+    /* Define a altura da barra de saúde como 5px */
+    background: #ddd;
+    /* Define o fundo da barra de saúde como cinza claro */
+    border-radius: 5px;
+    /* Torna os cantos da barra arredondados */
+    position: relative;
+    /* Permite o posicionamento de elementos filhos de forma relativa dentro da barra */
+}
+
+.bar-red {
+    background: #c54;
+    /* Define o fundo da barra de saúde vermelha como um tom de vermelho */
+    width: 100%;
+    /* Define a largura da barra vermelha para 100% do seu container */
+    height: 5px;
+    /* Define a altura da barra vermelha como 5px */
+    position: relative;
+    /* Permite o posicionamento relativo da barra vermelha */
+}
+
+.bar-green {
+    background: rgb(30, 155, 50);
+    /* Define o fundo da barra de saúde verde como um tom de verde */
+    width: 100%;
+    /* Define a largura da barra verde para 100% do seu container */
+    height: 5px;
+    /* Define a altura da barra verde como 5px */
+    position: relative;
+    /* Permite o posicionamento relativo da barra verde */
+}
+
+.evolutions {
+    text-align: center;
+    /* Centraliza o conteúdo dentro do container de evoluções */
+}
+
+.moves {
+    line-height: 1.4rem;
+    /* Define o espaçamento entre as linhas de texto na lista de movimentos */
+    height: 41vh;
+    /* Define a altura da seção de movimentos como 41% da altura da tela */
+    overflow-y: scroll;
+    /* Permite o rolar vertical quando o conteúdo excede a altura definida */
+}
+
+.moves table {
+    text-align: left;
+    /* Alinha o conteúdo das células da tabela à esquerda */
+    padding: 0 10px;
+    /* Adiciona padding horizontal de 10px nas células da tabela */
+    width: 100%;
+    /* Define a largura da tabela como 100% do seu container */
+}
+
+.moves::-webkit-scrollbar {
+    width: 0.15em;
+    /* Define a largura da barra de rolagem personalizada como 0.15em */
+}
+
+.moves::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    /* Aplica uma sombra interna na área da barra de rolagem */
+}
+
+.moves::-webkit-scrollbar-thumb {
+    background-color: #999;
+    /* Define a cor da "cabeça" (thumb) da barra de rolagem como cinza */
+    outline: 1px solid #999;
+    /* Aplica uma borda ao redor da "cabeça" da barra de rolagem */
+}
+
+.favoritedPokemon {
+    border: 3px dashed #555;
+    /* Aplica uma borda tracejada de 3px de cor cinza escuro aos Pokémon favoritos */
+}
+
+.imgEvolutions {
+    display: flex !important;
+    /* Usa flexbox para organizar as imagens de evolução em linha (com !important para garantir) */
+    flex-direction: column;
+    /* Organiza as imagens de evolução de forma vertical */
+    overflow-y: scroll;
+    /* Permite rolagem vertical se as imagens excederem a altura do container */
+}
+
+.imgEvolutions::-webkit-scrollbar {
+    width: 0.15em;
+    /* Define a largura da barra de rolagem personalizada como 0.15em */
+}
+
+.imgEvolutions::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    /* Aplica uma sombra interna na área da barra de rolagem */
+}
+
+.imgEvolutions::-webkit-scrollbar-thumb {
+    background-color: #999;
+    /* Define a cor da "cabeça" da barra de rolagem como cinza */
+    outline: 1px solid #999;
+    /* Aplica uma borda ao redor da "cabeça" da barra de rolagem */
+}
+
+.imgEvolutions img {
+    height: 6rem;
+    /* Define a altura das imagens de evolução como 6rem */
+}
+
+#popup {
+    width: 15rem;
+    /* Define a largura do popup como 15rem */
+    height: 4rem;
+    /* Define a altura do popup como 4rem */
+    background: #fff;
+    /* Define o fundo do popup como branco */
+    padding: 12px 20px 20px 20px;
+    /* Adiciona padding ao redor do conteúdo do popup */
+    position: fixed;
+    /* Posiciona o popup de forma fixa na tela */
+    margin: 0 auto;
+    /* Centraliza o popup na tela */
+    gap: 5px;
+    /* Adiciona um pequeno espaçamento entre os itens dentro do popup */
+    bottom: 0;
+    /* Posiciona o popup na parte inferior da tela */
+    right: 0;
+    /* Posiciona o popup à direita da tela */
+    left: 0;
+    /* Posiciona o popup à esquerda da tela */
+    top: 0;
+    /* Posiciona o popup no topo da tela */
+    display: none;
+    /* Inicialmente, o popup está oculto */
+    line-height: 1.2rem;
+    /* Define o espaçamento entre as linhas de texto dentro do popup */
+    justify-content: center;
+    /* Alinha os itens do popup ao centro */
+    align-items: flex-start;
+    /* Alinha os itens ao topo dentro do popup */
+    border: 1px solid lightgray;
+    /* Aplica uma borda fina de cor cinza clara ao redor do popup */
+    border-radius: 1rem;
+    /* Torna os cantos do popup arredondados */
+    text-align: center;
+    /* Centraliza o texto dentro do popup */
+    animation: fadeIn 1s;
+    /* Aplica uma animação de fade-in ao popup, durando 1 segundo */
+}
+
+
+.copyrigth {
+    font-weight: 500;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        /* No início da animação, a opacidade é 0, ou seja, invisível */
+    }
+
+    100% {
+        opacity: 1;
+        /* Ao final da animação, a opacidade é 1, tornando o elemento totalmente visível */
+    }
+}
+
+#close-bnt {
+    background: none;
+    /* Remove qualquer fundo no botão de fechar */
+    border: none;
+    /* Remove a borda do botão */
+    cursor: pointer;
+    /* Torna o cursor em forma de mão ao passar sobre o botão */
+}
+
+#close-bnt img {
+    height: 1.2rem;
+    /* Define a altura da imagem dentro do botão de fechar como 1.2rem */
+}
+
+@media screen and (max-height: 750px) {
+    .infosPokemon {
+        height: 30vh !important;
+        /* Ajusta a altura da seção "infosPokemon" para 30% da altura da tela, com prioridade */
+    }
+
+    .imgEvolutions {
+        height: 28vh !important;
+        /* Ajusta a altura das imagens de evolução para 28% da altura da tela */
+    }
+
+    .moves {
+        height: 30vh !important;
+        /* Ajusta a altura da seção de movimentos para 30% da altura da tela */
+    }
+
+    .infosPokemon {
+        overflow-y: scroll;
+        /* Permite rolagem vertical na seção "infosPokemon" */
+        height: 37vh;
+        /* Ajusta a altura para 37% da altura da tela */
+    }
+
+    .infosPokemon::-webkit-scrollbar {
+        width: 0.15em;
+        /* Define a largura da barra de rolagem personalizada */
+    }
+
+    .infosPokemon::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        /* Aplica uma sombra interna ao trilho da barra de rolagem */
+    }
+
+    .infosPokemon::-webkit-scrollbar-thumb {
+        background-color: #999;
+        /* Define a cor da "cabeça" da barra de rolagem como cinza */
+        outline: 1px solid #999;
+        /* Aplica uma borda ao redor da "cabeça" da barra de rolagem */
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .moves {
+        height: 37vh;
+        /* Ajusta a altura da seção de movimentos para 37% da altura da tela em dispositivos pequenos */
+    }
+
+    .imgEvolutions {
+        height: 35vh;
+        /* Ajusta a altura das imagens de evolução para 35% da altura da tela */
+    }
+
+    #popup {
+        width: 13rem;
+        /* Define a largura do popup para 13rem */
+        padding: 10px 15px 10px 15px;
+        /* Ajusta o padding dentro do popup */
+        top: 0;
+        /* Posiciona o popup no topo da tela */
+    }
+
+    .photo img {
+        height: 166px;
+        /* Define a altura das imagens na galeria para 166px */
+    }
+
+    .about1 div {
+        gap: 10px;
+        /* Adiciona um espaço de 10px entre os itens na seção "about1" */
+    }
+}
+
+@media screen and (min-width: 380px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr;
+        /* Ajusta a grade de Pokémon para 2 colunas em dispositivos de tela média */
+    }
+
+    .moves,
+    .imgEvolutions {
+        height: 38vh;
+        /* Ajusta a altura da seção de movimentos e imagens de evolução para 38% da altura da tela */
+    }
+
+    .photo img {
+        height: 166px;
+        /* Define a altura das imagens na galeria para 166px */
+    }
+
+    .detailsModal {
+        height: 66vh;
+        /* Define a altura do modal de detalhes para 66% da altura da tela */
+    }
+
+    #popup {
+        width: 13rem;
+        /* Define a largura do popup para 13rem */
+        padding: 10px 15px 10px 15px;
+        /* Ajusta o padding dentro do popup */
+        top: 0;
+        /* Posiciona o popup no topo da tela */
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr;
+        /* Ajusta a grade de Pokémon para 3 colunas em dispositivos maiores */
+    }
+
+    .moves,
+    .imgEvolutions {
+        height: 33vh;
+        /* Ajusta a altura da seção de movimentos e imagens de evolução para 33% da altura da tela */
+    }
+
+    .photo img {
+        height: 277px;
+        /* Define a altura das imagens na galeria para 277px em dispositivos maiores */
+    }
+
+    #popup {
+        width: 15rem;
+        /* Define a largura do popup para 15rem */
+        height: 3.5rem;
+        /* Define a altura do popup para 3.5rem */
+        padding: 7px 20px 20px 20px;
+        /* Ajusta o padding dentro do popup */
+        top: 0.4rem;
+        /* Posiciona o popup um pouco abaixo do topo */
+    }
+
+    .header {
+        background-size: 24rem;
+        /* Ajusta o tamanho de fundo do cabeçalho para 24rem */
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* Ajusta a grade de Pokémon para 4 colunas em dispositivos grandes */
+    }
+
+    .modal {
+        height: 100vh;
+        /* Define a altura do modal como 100% da altura da tela */
+    }
+
+    .header {
+        width: 50vw;
+        /* Define a largura do cabeçalho para 50% da largura da tela */
+        margin: 0 auto;
+        /* Centraliza o cabeçalho na tela */
+    }
+
+    .moves {
+        height: 33vh;
+        /* Ajusta a altura da seção de movimentos para 33% da altura da tela */
+    }
+
+    .imgEvolutions {
+        height: 34vh;
+        /* Ajusta a altura das imagens de evolução para 34% da altura da tela */
+    }
+
+    .detailsModal {
+        position: relative;
+        /* Define o posicionamento relativo do modal de detalhes */
+        width: 50vw;
+        /* Define a largura do modal de detalhes para 50% da largura da tela */
+        margin: 0 auto;
+        /* Centraliza o modal de detalhes na tela */
+        height: 48vh;
+        /* Define a altura do modal de detalhes para 48% da altura da tela */
+        padding: 40px;
+        /* Adiciona padding de 40px ao redor do conteúdo do modal */
+        padding-top: 1.5rem;
+        /* Adiciona padding superior de 1.5rem ao modal */
+    }
+}

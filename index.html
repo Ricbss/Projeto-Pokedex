@@ -1,0 +1,67 @@
+<!DOCTYPE html> <!-- Declara que o documento é HTML5 -->
+<html lang="pt-BR"> <!-- Define o idioma principal como português do Brasil -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Garante compatibilidade com versões mais antigas do Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define o layout responsivo para diferentes tamanhos de tela -->
+    <title>Pokedex</title> <!-- Define o título da página -->
+    <link rel="shortcut icon" href="./assets/Logo.png" type="image/x-icon"> <!-- Define o ícone da aba do navegador -->
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Importa o Normalize.css para padronizar estilos entre navegadores -->
+
+    <!-- Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Estabelece conexão antecipada com o servidor de fontes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Conexão antecipada com servidor de fontes específicas -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <!-- Importa a fonte Roboto com diferentes pesos -->
+
+    <!-- Nosso CSS -->
+    <link rel="stylesheet" href="./assets/css/global.css"> <!-- Importa o arquivo de estilos globais -->
+    <link rel="stylesheet" href="./assets/css/pokedex.css">
+    <!-- Importa o arquivo de estilos específicos para a Pokedex -->
+</head>
+
+<body>
+    <section class="content"> <!-- Seção principal do conteúdo da página -->
+        <!-- <h1>Pokedex</h1> --> <!-- Comentário de um título opcional -->
+
+        <div class="headerHome"> <!-- Div para o cabeçalho da página -->
+            <img src="./assets/Pokedex2 (2).png" alt="Pokedex" title="By Ricardo Barreto">
+            <!-- Imagem do cabeçalho com descrição acessível -->
+        </div>
+
+        <ol id="pokemonList" class="pokemons"> <!-- Lista ordenada para exibir os Pokémon -->
+            <!-- ..... Pokemons here ..... --> <!-- Placeholder para o conteúdo dinâmico dos Pokémon -->
+        </ol>
+
+        <div class="pagination"> <!-- Div para a paginação -->
+            <button id="loadMoreButton" type="button"> <!-- Botão para carregar mais Pokémon -->
+                Load More <!-- Texto do botão -->
+            </button>
+        </div>
+    </section>
+
+    <div class="modal"></div> <!-- Div reservada para modal (pop-up) -->
+
+    <!-- Nosso JS -->
+    <script src="./assets/js/pokemon-model.js"></script> <!-- Script que define o modelo de dados dos Pokémon -->
+    <script src="./assets/js/poke-api.js"></script> <!-- Script para interagir com a API de Pokémon -->
+    <script src="./assets/js/main.js"></script> <!-- Script principal que integra as funcionalidades -->
+
+    <footer>
+        <p class="footer-logo">Pokedex</p>
+        <p class="copyrigth">Desenvolvido por &copy; Ricardo Barreto</p>
+    </footer>
+
+</body>
+
+</html>

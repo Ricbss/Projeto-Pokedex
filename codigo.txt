@@ -1,0 +1,9 @@
+ <div class="modal"></div> <!-- Div reservada para modal (pop-up) -->
+
+    <div id="popup"> <!-- Div para um pop-up de mensagem -->
+        <button id="close-bnt" onclick="closePopUp()">
+            <!-- Botão para fechar o pop-up, chama a função JavaScript closePopUp() -->
+            <img src="./assets/img/cross.png"> <!-- Ícone de fechar -->
+        </button> <br>
+        <label>Favorite Pokémon added !</label> <!-- Mensagem exibida no pop-up -->
+    </div>

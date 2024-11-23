@@ -1,0 +1,54 @@
+*/
+
+<li>
+                Ivysaur
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/2.svg"
+                    alt="Ivysaur">
+            </li>
+            <li>
+                Venusaur
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/3.svg"
+                    alt="Venusaur">
+            </li>
+            <li>
+                Charmander
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/4.svg"
+                    alt="Charmander">
+            </li>
+            <li>
+                Charmeleon
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/5.svg"
+                    alt="Charmeleon">
+            </li>
+            <li>
+                Charizard
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/6.svg"
+                    alt="Charizard">
+            </li>
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+.pagination button {
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .625rem;
+    color: #fff;
+    background-color: #6c79db;
+    border: none;
+    border-radius: 1rem;
+}
+/*
